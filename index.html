@@ -12,41 +12,50 @@
 	<!-- Main page design: A trial of dark ink flow from the main image. Will be the same as one of those palla-->
 	<body class="mainPage"
 		data-0="background-color:rgb(248,201,118);"
-		data-500="background-color:rgb(65,74,76);" 
-		data-1000="background-color:rgb(41,255,145);" 
-		data-1500="background-color:rgb(240, 255, 255);"
-		data-2000="background-color:rgb(255, 140, 0);"
+		data-1000="background-color:rgb(65,74,76);" 
 		>
 		<!--Side Bar !!Will be move to another page for profile etc..-->
 		<!--Avatar-->
 		<div id="skrollr-body">
 			<div>
-				<canvas></canvas>
+				<canvas id="greet"> </canvas>
 			</div>
 			<div 
 				data-top = "	position: fixed; top:0% "
-				data-0 = "position: static;"
-				class="banner top span" 
-			>
-				<img class="span"
-							src="img/	AlmondCoffeeHeaderMKI.png"
-							
-							/>
+				data-0 = "position: static"
+				class="span"
+				 >
+				<img class="span" src="img/AlmondCoffeeHeaderMKI.png"/>
+			</div>
+			
+			<div 
+				class = "span"
+				data-200 = "opacity: 1; position:fixed; top:108px"
+				data-0 = "opacity: 0; position:fixed; top:300px"
+				>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Lougne</a></li>
+						<li><a href="#">Map</a></li>
+						<li><a href="#">Order</a></li>
+						<li><a href="#">Notes</a></li>
+						<li><a href="#">Discussion</a></li>
+					</ul>
+			</div>
+			
+			
+			<div>
+				<canvas id="meetNgreet"></canvas>
 			</div>
 			<div>
+				<canvas id="chillCoffee"></canvas>
 			</div>
-			<div class ="slide1">
-				<!--javascrip:void(0) ??-->
-				
-			</div>
+			
 			<!--Projects Line 1 (will be a binary tree or quad or etc...)-->
-			<div class="splat project" id="slide1">
-			</div>
 		</div>
 			
 	<!--Scripts-->	
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-slider.js"></script>
@@ -54,10 +63,7 @@
 	<script type="text/javascript" src="js/md5.js"></script>
 	<script type="text/javascript" src="js/morris.min.js"></script>
 	<script type="text/javascript" src="js/store.min.js"></script>
-	<script type="text/javascript">
-		
-		var s = skrollr.init();
-    </script>
+	<script type="text/javascript" src="js/index.js"></script>
 	</body>
 
 </html>
