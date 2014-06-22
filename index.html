@@ -1,69 +1,124 @@
 <!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-		<title>~Almond Coffee~</title>
-		
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<meta name="Description" content="Almond Coffee Front Page">
-		<meta charset="UTF-8">
-	</head>
-	<!-- Main page design: A trial of dark ink flow from the main image. Will be the same as one of those palla-->
-	<body class="mainPage"
-		data-0="background-color:rgb(248,201,118);"
-		data-1000="background-color:rgb(65,74,76);" 
-		>
-		<!--Side Bar !!Will be move to another page for profile etc..-->
-		<!--Avatar-->
-		<div id="skrollr-body">
-			<div>
-				<canvas id="greet"> </canvas>
-			</div>
-			<div 
-				data-top = "	position: fixed; top:0% "
-				data-0 = "position: static"
-				class="span"
-				 >
-				<img class="span" src="img/AlmondCoffeeHeaderMKI.png"/>
-			</div>
-			
-			<div 
-				class = "span"
-				data-200 = "opacity: 1; position:fixed; top:108px"
-				data-0 = "opacity: 0; position:fixed; top:300px"
-				>
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Lougne</a></li>
-						<li><a href="#">Map</a></li>
-						<li><a href="#">Order</a></li>
-						<li><a href="#">Notes</a></li>
-						<li><a href="#">Discussion</a></li>
-					</ul>
-			</div>
-			
-			
-			<div>
-				<canvas id="meetNgreet"></canvas>
-			</div>
-			<div>
-				<canvas id="chillCoffee"></canvas>
-			</div>
-			
-			<!--Projects Line 1 (will be a binary tree or quad or etc...)-->
-		</div>
-			
-	<!--Scripts-->	
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
-	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap-slider.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/md5.js"></script>
-	<script type="text/javascript" src="js/morris.min.js"></script>
-	<script type="text/javascript" src="js/store.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	</body>
+<head>
+	<meta 	http-equiv="Content-Type"
+	content="text/html; charset=UTF-8" />
 
+	<title>~Almond Coffee~</title>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta name="Description" content="Almond Coffee Front Page">
+	<meta charset="UTF-8">
+</head>
+
+<!-- Main page design:A Simple Palla page with logo, pic, menu.
+User scroll for menus and pics-->
+
+<body 	class="mainPage"
+data-0		="background-color:rgb(0,0,0);"
+data-300	="background-color:rgb(189,121,24);"
+data-500	="background-color:rgb(0,0,0);"
+>
+
+<!-- Main Scroll-->
+
+<div id="skrollr-body">
+	<div>
+		<canvas id="greet"> </canvas>
+	</div>
+
+	<div class	= "span logo"
+	data-0 		= "position: static; height: 100px; z-index: 9;"
+	data-top 	= "position: fixed; top:0%">
+	<img
+	style = "height: 100px; z-index: 9;"
+	src="img/icons/logoMKI.png"/> </div>
+
+	<div id="add">
+		<img src="img/icons/addMKI.png" alt=""/>
+	</div>
+	<div id="tel">
+		<img src="img/icons/telMKI.png" alt=""/>
+	</div>
+
+	<div>
+		<h1> ~<font color="FFFF00;">M</font>enu Below~ </h1>
+		<h1>&hearts;</h1>
+	</div>
+
+	<div id="menu1" class="menu span"
+	data-0		= "opacity: 0"
+	data--50-top	= "opacity: 2">
+		<img src="img/menu/1-small.png" alt="" />
+	</div>
+
+	<div id="menu2" class="menu span">
+		<img src="img/menu/2-small.png" alt="" />
+	</div>
+
+	<div id="menu3" class="menu span">
+		<img src="img/menu/3-small.png" alt="" />
+	</div>
+
+
+	<div id="menu4" class="menu span">
+		<img src="img/menu/4-small.png" alt="" />
+	</div>
+
+	<div id="menu5" class="menu span">
+		<img src="img/menu/5-small.png" alt="" />
+	</div>
+
+	<div>
+		<canvas id="greet"> </canvas>
+	</div>
+
+	<div id="add">
+		<img src="img/icons/addMKI.png" alt=""/>
+	</div>
+
+	<div id="add">
+		<img src="img/icons/telMKI.png" alt=""/>
+	</div>
+	<div>
+		<h1>~ Thank you ~</h1>
+		<h2> &#9668 Have an <font color="FFFF00;">A</font>lmond day &#9658</h2>
+		<h2>(&acute;&omega;`)</h2>
+	</div>
+
+
+	<!-- Please Scroll for our menu~ -->
+
+
+	<!-- nav section later
+	<div
+	class = "span"
+	data-200 = "opacity: 1; position:fixed; top:108px"
+	data-0 = "opacity: 0; position:fixed; top:300px"
+	>
+	<ul>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Lougne</a></li>
+	<li><a href="#">Map</a></li>
+	<li><a href="#">Order</a></li>
+	<li><a href="#">Notes</a></li>
+	<li><a href="#">Discussion</a></li>
+</ul>
+
+</div> -->
+
+
+</div>
+
+<!--Scripts-->
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-slider.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript" src="js/morris.min.js"></script>
+<script type="text/javascript" src="js/store.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
 </html>
